@@ -1,209 +1,171 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/estilo.css">
-        <title>Finca Raiz</title>
-
-        
-    </head>
-    <body>
-        
-        <header class="site-header inicio">
-            <div class="contenedor contenido-header">
-                <div class="barra">
-                    <a href="/"></a>
-                    <a href="index.html" id="logo"><img src="img/logo.png" alt="Logo Bienes"></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>BienesRaiz</title>
+</head>
+<body>
+    <header class="site-header inicio">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html" id="logo"><div id="imglogo"></div></a>
                 <nav class="navegacion">
                     <a href="#inicio">Inicio</a> 
-                    <a href="#nosotros">Nosotros</a> 
-                    <a href="Nosotros.html">Conoce mas sobre nosotros</a>
+                    <a href="Nosotros.html">Nosotros</a>
                     <a href="#anuncios">Anuncios</a> 
-                    <a href="#contacto"></a> 
                     <a href="#contacto">Contacto</a> 
                     <a href="#blog">Blog</a> 
-                    <a href="#comentarios">Comentarios</a> 
+                    <a href="#comentarios">Comentarios</a>
+                    <a href="#oficinas">Oficinas</a> 
                 </nav>
-                </div><!--Finaliza la seccion de barra -->
-                <h1>Venta de casas y departamentos exclusivos de lujo</h1>     
-            </div> <!--Finaliza el contenedor-->
-        </header> 
-    <main>
-        <section id="nosotros" class="contenedor-seccion">
-                <a href="#nosotros"></a>
-            <h2 class="nosotros centrar-texto">Mas sobre nosotros</h2>
-            <div class="iconos-nosotros">
-
-                <div class="iconos">
-                    <img src="img/candado1.png" alt="Seguridad">
-                <h3 class="encabezado mayuscula">Seguridad</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam illo error doloribus cumque voluptate numquam ab sapiente consequuntur deleniti incidunt. Molestias ad aliquid voluptatum blanditiis fugit eius eligendi libero sed! </p>
-            </div> <!--finaliza clase iconos-->
-            <div class="iconos">
-                <img src="img/billete.png" alt="Precio">
-                <h3 class="encabezado mayuscula">El Mejor Precio</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem illum neque magnam nam molestiae eligendi, nihil architecto autem perspiciatis quia id consequuntur nostrum minus, consectetur aut impedit. Natus, consequuntur temporibus?</p>
             </div>
-            <div class="iconos">
-                <img src="img/reloj.png" alt="Tiempo">
-                <h3 class="encabezado mayuscula">A Tiempo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, earum, natus velit quisquam, similique aspernatur exercitationem tenetur expedita nulla voluptatum magnam? Perspiciatis quis magni ut laborum labore molestias facilis corporis! </p>
-            </div><!--finaliza clase iconos--> 
-        </div> <!--Fnaliza la clase Iconos Nosotros-->
-        </section><!--Fnaliza la seccion de Nosotros-->
-
-
-        <section id="anuncios" class="contenedor seccion">
-                <a href="#anuncios"></a>
-            <h2 class="nosotros centrar-texto">Casa y Departamentos en Venta</h2>
-            <div class="contenedor-anuncio">
-                <div class="anuncio"> 
-                    <img src="img/casa.jpg" alt="Anuncio 1">
-                    <div class="contenido-anuncio">
-                    <h3>Casa de Lujo en el Lago</h3>
-                    <p> casa en el lago con excelente vista , acabados de lujo a un excelente precio</p>
-                    <p class="precio"> $3,000,000,00</p>
-                    <ul class="iconos-anuncios">
-                        <li>
-                            <img src="img/sr.png" alt="Icono EC">
-                        <p>4</p>
-                        </li>
-                        <li>
-                            <img src="img/cr.png" alt="Icono estacionamiento ">
-                        </li>
-                        <p>3</p>
-                        <li>
-                            <img src="img/so.png" alt="icono recamaras">
-                        </li>
-                        <p>5</p>
-
-                    </ul>
-                    <a href="" class="boton btn-naranja block">Ver Propiedad</a>  
-                    </div>
-                </div><!--Finaliza primer anuncio-->
-                
+            <h1>Venta de casas y departamentos exclusivos de lujo</h1>     
+        </div> 
+    </header> 
+    <main>
+        <section id="anuncios">
+            <h2>Anuncios</h2>
+            <h3>Casa Y Departamentos En Venta</h3>
+            <div class="fila">
                 <div class="anuncio">
-                    <img src="img/casa2.jpg" alt="Anuncio 2">
+                    <img src="img/casa.jpg" alt="casa">
+                    <h3>Casa de Lujo en El Lago</h3>
+                    <p>casa en el lago con excelente vista. acabado de lujo a un excelente precio</p>
+                    <p id="precio">$3.000.000.000</p>
+                    <div class="contenedor-imagenes">
+                        <img src="img/sr.png" alt="sr">                        
+                        <img src="img/cr.png" alt="cr">
+                        <img src="img/so.png" alt="so">
+                    </div>
+                    <button class="btn-naranja"><p>Ver Propiedad</p></button>
+                </div>
+                <div class="anuncio">
+                    <img src="img/casa2.jpg" alt="casa2">
                     <h3>Casa Terminado de Lujo</h3>
-                    <div class="contenido-anuncio">
-                    <p>casa con diseño moderno, asi como tecnologia inteligente</p>
-                    <p class="precio">4,000,000,00</p>
-                    <ul class="iconos-anuncios">
-                        <li>
-                            <img src="img/sr.png" alt="Icono EC">
-                        <p>4</p>
-                        </li>
-                        <li>
-                            <img src="img/cr.png" alt="Icono estacionamiento ">
-                        </li>
-                        <p>3</p>
-                        <li>
-                            <img src="img/so.png" alt="icono recamaras">
-                        </li>
-                        <p>5</p>
-
-                    </ul>
-                    <a href="" class="boton  btn-naranja block"> Ver Propiedad</a>   
+                    <p>Casa con diseño, así como tecnología inteligente <br><br></p>
+                    <p id="precio">$4.000.000.000</p>
+                    <div class="contenedor-imagenes">
+                        <img src="img/sr.png" alt="sr">                        
+                        <img src="img/cr.png" alt="cr">
+                        <img src="img/so.png" alt="so">
                     </div>
-                    
-                </div><!--Finaliza segundo anuncio-->
-
+                    <button class="btn-naranja"><p>Ver Propiedad</p></button>
+                </div>
                 <div class="anuncio">
-                    <img src="img/casa3.jpg" alt="Anuncio 3 ">                  
-                    <h3>Casa con Alberca</h3>
-                    <div class="contenido-anuncio">
-                    <p>casa con alberca y acabados de lujo en la ciudad, exclente aportunidad</p>
-                    <p class="precio">5,000,000,00</p>
-                    <ul class="iconos-anuncios">
-                        <li>
-                            <img src="img/sr.png" alt="Icono EC">
-                        <p>4</p>
-                        </li>
-                        <li>
-                            <img src="img/cr.png" alt="Icono estacionamiento ">
-                        </li>
-                        <p>3</p>
-                        <li>
-                            <img src="img/so.png" alt="icono recamaras">
-                        </li>
-                        <p>5</p>
-                    </ul>
-                    <a href="" class="boton  btn-naranja block">Ver Propiedad</a>    
+                    <img src="img/casa3.jpg" alt="casa3">
+                    <h3>Casa con Piscina</h3>
+                    <p>casa con alberca y acabados de lujo en la ciudad, excelente oportunidad</p>
+                    <p id="precio">$5.000.000.000</p>
+                    <div class="contenedor-imagenes">
+                        <img src="img/sr.png" alt="sr">                        
+                        <img src="img/cr.png" alt="cr">
+                        <img src="img/so.png" alt="so">
                     </div>
-                </div><!--Finaliza tercer anuncio-->       
-            </div> <!--finalizan los anuncios-->
-
-
-           <div class="ver-todas">
-            <a href="" class="boton btn-verde">Ver Todas </a>
-           </div> 
-        </section><!--Fnaliza la seccion de casa y departamentos-->
-
-        <br>
+                    <button class="btn-naranja"><p>Ver Propiedad</p></button>
+                </div>
+            </div>
+            <button class="btn-verde"><p>Ver todas</p></button>
+        </section>
         <section id="contacto"  class="imagen-contacto">
             <a href="#contacto"></a>
-        <div class="contenedor contenido-contacto">
-            <h2>Encuentra la Casa de tus Sueños</h2>
-            <p>LLena el formulario y un asesor se podra contactar en un momento</p>
-            <a href="" class="boton btn-naranja">Contactanos</a>
-        </div>
-        </section><!--Fnaliza la seccion de Contacto-->
+            <div class="contenedor contenido-contacto">
+                <h2>Encuentra la Casa de tus Sueños</h2>
+                <p>LLena el formulario y un asesor se podrá contactar en un momento</p>
+                <a href="" class="boton btn-naranja">Contactanos</a>
+            </div>
+        </section>
         <br>
         <div class="contenedor inferior">
-
-            
-        <section id="blog" class="blog">
-            <a href="#blog"></a>
-            <h3 class="centrar-texto">Nuestro blog</h2>
-            <article class="entrada-blog">
-                <div class="imagen-blog">
-                    <img src="img/gla1.jpg" alt="Entrada 1">
-                </div>
-                <div class="texto-blog">
-                    <a href="#">
-                        <h4>Terraza en el techo de tu Casa</h3>
-                    </a>
-                    
+            <section id="blog" class="blog">
+                <a href="#blog"></a>
+                <h3 class="titulo-blog">Nuestro blog</h3>
+                <article class="entrada-blog">
+                    <div class="imagen-blog">
+                        <img src="img/gla1.jpg" alt="Entrada 1" class="img-blog">
+                    </div>
+                    <div class="texto-blog">
+                            <h4>Terraza en el techo de tu Casa</h4>
+                        </a>
                         <p>Escrito el: 08/02/2024, por jesus santido </p>
-                        <p>Consejo para contruir un techo de tu casa, con los mejores materiales y ahorramos dinero</p>
-                </div>
-                
-            </article>
-
-            <article class="entrada-blog">
-                <div class="imagen-blog">
-                    <img src="img/gla2.jpg" alt="Entrada 2">
-                </div>
-                <div class="texto-blog">
-                    <a href="#">
-                         <h4>Guia para la decoracion de tu hogar</h3>
-                    </a>
-                   
-                        <p>Escrito el: 07/02/2024, por marcela gonzales </p>
-                        <p>Maxima el espacio de tu hogar con esta guia, aprende a continuar muebles y colores para darle vida a tu espacion </p>
-                </div>
-                
+                        <p>Consejo para construir un techo de tu casa, con los mejores materiales y ahorramos dinero</p>
+                    </div>
                 </article>
-        </section><!--Fnaliza la seccion de Blog-->
-
-        
-        <section id="comentarios"  class="comentarios">
-            <a href="#comentarios"></a>
-            <h3 class="centrar-texto"> Comentarios </h2>
-            <div class="comentarios">
-                <blockquote> El personal se comporto de una excelente forma, muy buena atencion y la casa que me ofrecieron cumple con todas las expectativas </blockquote>
-            <p>- Usuario sastisfecho</p>
+                <article class="entrada-blog">
+                    <div class="imagen-blog">
+                        <img src="img/gla2.jpg" alt="Entrada 2">
+                    </div>
+                    <div class="texto-blog">
+                            <h4>Guía para la decoración de tu hogar</h4>
+                        </a>
+                        <p>Escrito el: 07/02/2024, por marcela gonzales </p>
+                        <p>Máxima el espacio de tu hogar con esta guía, aprende a continuar muebles y colores para darle vida a tu espacio</p>
+                    </div>
+                </article>
+            </section>
+            <section id="comentarios"  class="comentarios">
+                <h3 class="centrar-texto"> Comentarios </h3>
+                <div class="formulario">
+                    <form action="">
+                        <input type="text" placeholder="nombre:" required>
+                        <input type="email" placeholder="email:" required>
+                        <input type="text" placeholder="comentario:" required>
+                        <p >califícanos del 1 al 5</p>
+                        <div class="calificacion">
+                            <input type="checkbox" id="star1" placeholder="1">
+                            <label for="star1">⭐</label>
+                            <input type="checkbox" id="star2" placeholder="2">
+                            <label for="star2">⭐</label>
+                            <input type="checkbox" id="star3" placeholder="3">
+                            <label for="star3">⭐</label>
+                            <input type="checkbox" id="star4" placeholder="4">
+                            <label for="star4">⭐</label>
+                            <input type="checkbox" id="star5" placeholder="5">
+                            <label for="star5">⭐</label>
+                        </div>                    
+                        <button onclick="enviar()" class="btn-naranja">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <section id="oficinas">
+            <h2>Oficinas</h2>
+            <h3>Visita nuestas oficinas y recibe asesoramiento</h3>
+            <h3>Bogotá</h3>
+            <div class="fila">
+                <div class="oficinas">
+                    <img src="img/oficina.png" alt="casa">
+                    <h3>Calle 54 - #25</h3>
+                    <p>Teusaquillo / Bogotá / Colombia</p>
+                    <div class="contenedor-imagenes">
+                    </div>
+                </div>
+                <div class="oficinas">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.107338901974!2d-74.1372287!3d4.574735399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9f3a411d8755%3A0xc87fcafcd7312c54!2sDg.%2054%20Sur%20%2325%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1707604826673!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-        </section><!--Fnaliza la seccion de comentarios-->
-        </div><!--Finaliza seccion final-->
+            <h3>Medellín</h3>
+            <div class="fila">
+                <div class="oficinas">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1182.9318891602718!2d-75.58548929255451!3d6.244634710317307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a8bc0d50e1%3A0xc535a5f3d9b7cc30!2sCra%2066B%20%26%20Cq.%205%2C%20Laureles%20-%20Estadio%2C%20Medell%C3%ADn%2C%20Laureles%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1707605155354!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="oficinas">
+                    <img src="img/oficina.png" alt="casa">
+                    <h3>Carrera 66 b & cq.5</h3>
+                    <p>Laureles / Medellín / Colombia</p>
+                    <div class="contenedor-imagenes">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-            <br>
-        <footer class="seccion seccion-footer">
-            <div class="contenedor">
-                <p class="derechos">Todos los derechos reservados 2024</p>
-                <p class="derechos">Pagina hech por:Valerie Huertas</p>
-            </div>
-        </footer>
-    </body>
-    </html>
+    <footer id="desarrollador">
+        <h3>Desarrollador <br><br></h3>
+        <p>dvdlozano902@gmail.com</p>
+        <p>+57 3203084252</p>
+        <p>Valerie Daniela Huertas Lozano</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
