@@ -1,0 +1,321 @@
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+
+    *, *::before, * ::after{
+        box-sizing: inherit;
+    }
+    body { 
+        font-size: 16px;
+        line-height: 2;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /* Estilos de la cabecera */
+
+    .contenedor{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    h3{
+        font-size: 32px;
+    }
+
+    h4{
+        font-size: 28px;
+    }
+
+    /* Utilidades de la página */
+    .contenedor-seccion{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .nosotros{
+        font-weight: 300;
+    }
+
+    .centrar-texto{
+        text-align: center;
+    }
+
+    .block{
+        display: block!important;
+    }
+
+
+    /* boton */
+
+    .boton{
+        font-weight: 300;
+        text-decoration: none;
+        color: white;
+        padding: 10px 30px;
+        margin-top: 30px;
+        display: inline-block;
+        border: none;  
+        text-align: center;  
+    }
+
+
+    .btn-naranja{
+        background-color: chocolate;
+    }
+
+
+    .btn-verde{
+        background-color: #71b100;
+    }
+
+    /* encabezado */
+
+    .site-header.inicio {
+        background-image: url("../img/bg-header.jpg");
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        min-height: 600px;
+    } 
+
+    .site-header{
+        background-color: #726b6b; ;      
+    }
+
+    .contenido-header{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contenido-header h1{
+        color: #ffffff;
+        padding-bottom: 20px;
+        max-width: 600px;
+        line-height: 90px;
+    }
+
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+
+    .navegacion a{
+        font-family: 'Times New Roman', Times, serif;
+        color: #9b9b9b;
+        text-decoration: nome; 
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+    .navegacion a:last-child{ 
+        margin: 0;
+    }
+
+    .navegacion a:hover{
+        color: #ebc3d9;
+    }
+
+    /* Sección nosotros */
+
+    .encabezado{
+        font-weight: 300;
+        text-align: center;
+    }
+    .iconos-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .iconos{
+        flex-basis: calc(33.3% - 1rem);
+        text-align: center;
+    }
+
+    .mayuscula{
+        text-transform: uppercase;
+    }
+
+    /**Anuncios**/
+
+    .contenedor-anuncio{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .anuncio{
+        flex-basis: calc(33.3% - 10px);
+        border: 1px  solid #b5b5b5;
+        background-color: #f5f5f5;
+    }
+
+    .contenido-anuncio{
+        padding: 30px;
+    }
+
+    .contenido-anuncio h3,
+    .contenedor-anuncio p{
+        margin: 0;
+    }
+
+    .precio{
+        color: #71b100; 
+        font-weight: 700;
+    }
+
+    .ver-todas{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .iconos-anuncios{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly ;
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .iconos-anuncios li{
+        display: flex;
+    }
+
+    .iconos-anuncios li img{
+        margin: 20px;
+    }
+
+    /**seccion de contacto de la pagina principal**/
+
+    .imagen-contacto{
+        background-image: url(../img/imgsu.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contenido-contacto{
+        flex: 1;
+        color: white;    
+    }
+
+    .contenido-contacto p{
+        font-size: 18px;
+    }
+
+    /**Seccion Inferior de la pagina principal**/
+
+    .inferior{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inferior .blog{
+        flex-basis: 60%;
+    }
+
+    .inferior .comentarios{
+        flex-basis: calc(40% - 20px);
+    }
+
+    .entrada-blog{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .entrada-blog:last-of-type{
+        margin-bottom: 0;
+    }
+
+    .entrada-blog .imagen-blog {
+        flex-basis: 40%;
+    }
+
+    .entrada-blog .texto-blog{
+        flex-basis: calc(60% - 20px);
+    }
+    
+    .texto-blog a{
+        color: #000;
+        text-decoration: none;
+    }
+
+    .texto-blog h4{
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    .texto-blog h4::after{
+        content: ' ';
+        display: block;
+        width: 350px;
+        height: 8px;
+        background-color: #71b100;
+        margin-top: 10px;
+    }
+
+    /**Seccion Comentarios**/
+
+    .comentarios{
+        background-color: #71b100;
+        font-size: 24px;
+        padding: 20px;
+        color: white;
+        border-radius: 30px;
+    }
+
+    .comentarios p{
+        text-align: right;
+    }
+
+    /**Seccion Foter**/
+    
+    .seccion-footer{
+        background-color: #726b6b; ;
+        margin: 0;
+    }
+
+    .contenedor-footer{
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .derechos{
+        margin: 0;
+        color: white;
+    }
+
+    /**Pagina Interna Nosotros**/
+
+    .contenido-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
+
+    .texto-nosotros blockquote{
+        font-weight: 700;
+        font-size: 20px;
+        margin: 0;
+        padding: 10px 0 30px 0;
+    }
+
+    .texto-nosotros p{
+        text-align: justify;
+    }
