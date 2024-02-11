@@ -457,5 +457,67 @@ footer h3, footer p {
     color: #fff;
     text-align: center;
 }
+/* SMARTPHONES*/
+@media screen and (min-width:320px) and (max-width: 1024px) { 
+h1 {
+    margin: 15px;
+}
+.barra{
+    background: #fff;
+}
+.navegacion a{
+    padding: 5px;
+    margin: 50px 10px ;
+    color: #000;
+    font-size: 25px;
+}
+.contenedor .contenido-header{
+    display: block;
+}
+#anuncios {
+    margin: 10px;
+    display: block;
+}
 
-  
+#anuncios .fila {
+    padding: 10px;
+    margin: 10px;
+    display: block;
+}
+#anuncios .anuncio{
+    width: 100%;
+    margin: 10px 40px;
+}
+#contacto{
+    height: 100vh;
+}
+.contenedor.contenido-contacto{
+    text-align: center;
+}
+#contenedor-inferior{
+    display: block;
+}
+#blog{
+    margin: 10px;
+}
+.entrada-blog{
+    margin: 10px;
+}
+#comentarios{
+    margin: 10px;
+}
+#oficinas .fila{
+    padding: 10px;
+    margin: 10px;
+    display: block;
+}
+#oficinas .oficinas{
+    padding: 10px 25px;
+    margin: 10px;
+    display: block;
+}
+
+
+
+
+}
